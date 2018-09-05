@@ -11,3 +11,5 @@ spring:
         orderTopic-new:
           destination: orderTopic
           contentType: application/json
+server:
+     port: 8888          
