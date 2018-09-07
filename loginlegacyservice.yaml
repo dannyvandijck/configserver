@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        loginTopic-update-from-login-service:
+          destination: loginTopic
+          contentType: application/json
+        loginTopic-update-from-legacy:
+          destination: loginTopic
+          contentType: application/json
+server:
+     port: 8890        
