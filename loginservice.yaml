@@ -5,10 +5,10 @@ spring:
         binder:
           brokers: localhost:9093
       bindings:
-        login-update-from-loginLegacyTopic:
+        login-update-to-loginLegacyTopic:
           destination: loginLegacyTopic
           contentType: application/json
-        login-update-for-loginTopic:
+        login-update-from-loginTopic:
           destination: loginTopic
           contentType: application/json
 server:
