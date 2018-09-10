@@ -5,11 +5,11 @@ spring:
         binder:
           brokers: localhost:9093
       bindings:
-        loginTopic-update-from-login-legacy-service:
-          destination: loginTopic
+        login-update-from-loginLegacyTopic:
+          destination: loginLegacyTopic
           contentType: application/json
-        loginTopic-update-from-login-service:
+        login-update-for-loginTopic:
           destination: loginTopic
           contentType: application/json
 server:
-     port: 8889        
+     port: 8889   
